@@ -7,11 +7,11 @@ CLI application that takes two files, the columns to join on, and the columns fr
 that you want in the report and generates a JSON document. 
 
 
-## Some things to be aware of
+## Some Things To Be Aware Of
 
-* This application is currently configured to support csv and parquet files. 
-* If the files have overlapping columns, the application with extract the file name (excluding extension) and append to the column name to differentiate.
-* Instead of pandas, dask dataframes are used in case the files are too large to be kept in memory
+* This application is currently configured to support reading .csv and .parquet files. 
+* If the files have overlapping columns, the application will extract the file name (excluding extension) and append to the column name to differentiate.
+* Instead of pandas, dask dataframes are used in case the files are too large to be kept in memory.
 
 ## Arguments
   -file1          First file to read.
