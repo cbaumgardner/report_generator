@@ -14,11 +14,11 @@ that you want in the report and generates a JSON document.
 * Instead of pandas, dask dataframes are used in case the files are too large to be kept in memory.
 
 ## Arguments
-  -file1          First file to read.
+```  -file1          First file to read.
   -file1_cols     Columns to select from file 1.
   -file2          Second file to read.
   -file2_cols     Columns to select from file 2.
-  -join_cols      Columns to join file 1 and file 2 on. Column name must be the same in each 				 file.
+  -join_cols      Columns to join file 1 and file 2 on. Column name must be the same in each 				 file.```
 
 ## Example call
 ```python3 report_generator -file1 /Path/to/file/students.csv -file1_cols fname lname cid -file2 /Path/to/file/teachers.parquet -file2_cols fname lname -join_cols cid``` 
